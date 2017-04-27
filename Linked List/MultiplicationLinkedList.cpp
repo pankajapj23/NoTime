@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 struct node{
 	int data; struct node *next;
@@ -114,6 +115,7 @@ void muliplyList(struct node *head1,struct node *head2){
 
 int main()
 {
+	clock_t begin = clock();
 	struct node *list1=NULL, *list2=NULL;
 	addNodeAtEnd(&list1, 1);
 	addNodeAtEnd(&list1, 2);
@@ -131,6 +133,8 @@ int main()
 
 	muliplyList(list1, list2);
 
-	printf("\n");
+	clock_t end = clock();
+    double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+	printf("\nTotal execution time (in ms): %lf\n\n", time_spent);
 	return 0;
 }
