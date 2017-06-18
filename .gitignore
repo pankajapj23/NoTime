@@ -1,0 +1,15 @@
+Array/Array/Array/Debug/BuildLog.htm
+*.manifest
+Array/Array/Array/Debug/insertInSortedArray.obj
+*.obj
+Array/Array/Array/Debug/Array.exe.embed.manifest.res
+*.suo
+Array/Array/Array.sln
+*.dep
+Array/Array/Array.ncb
+*.vcproj
+Array/Array/Debug/Array.exe
+*.pdb
+Array/Array/Array/Debug/vc90.idb
+*.user
+Array/Array/Debug/Array.ilk
